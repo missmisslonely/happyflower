@@ -26,6 +26,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.miss.plants.view.CircleImageView;
 import com.qlf.plants.MainActivity;
 import com.qlf.plants.R;
 import com.qlf.plants.activity.ChooseActivity;
@@ -36,7 +37,6 @@ import com.qlf.plants.http.RequestParams;
 import com.qlf.plants.thread.UploadThread;
 import com.qlf.plants.userdata.UserData;
 import com.qlf.plants.utils.HttpUtils;
-import com.qlf.plants.view.CircleImageView;
 
 public class UserInfoFragment extends Fragment {
 

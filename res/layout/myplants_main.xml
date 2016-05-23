@@ -30,7 +30,7 @@
             android:textSize="20dp" />
     </RelativeLayout>
 
-     <com.qlf.plants.view.XListView
+     <com.miss.plants.view.XListView
             android:id="@+id/plant_list"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -39,7 +39,7 @@
             android:layout_marginBottom="90dp"
             android:divider="@drawable/line"
             android:dividerHeight="1dp" >
-        </com.qlf.plants.view.XListView>
+        </com.miss.plants.view.XListView>
 
         <RelativeLayout
             android:id="@+id/add"

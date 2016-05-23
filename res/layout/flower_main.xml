@@ -67,14 +67,14 @@
         android:layout_marginRight="6dp"
         android:layout_marginTop="5dp" >
 
-        <com.qlf.plants.view.XListView
+        <com.miss.plants.view.XListView
             android:id="@+id/flower_list"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_gravity="center"
             android:divider="@drawable/line"
             android:dividerHeight="2dp" >
-        </com.qlf.plants.view.XListView>
+        </com.miss.plants.view.XListView>
 
         <TextView
             android:id="@+id/dialog"

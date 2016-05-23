@@ -13,7 +13,7 @@
             android:background="@drawable/user_back1" />
     </RelativeLayout>
 
-    <com.qlf.plants.view.CircleImageView
+    <com.miss.plants.view.CircleImageView
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/user_head"
         android:layout_width="80dp"

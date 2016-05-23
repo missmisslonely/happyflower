@@ -66,5 +66,15 @@
         <item name="android:backgroundDimEnabled">true</item>
         <!-- 模糊 -->
     </style>
-
+     <style name="Tweet_Inline">
+        <item name="android:paddingTop">@dimen/medium</item>
+        <item name="android:paddingBottom">@dimen/medium</item>
+    </style>
+   <style name="Tweet_Inline.Icon">
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingRight">@dimen/medium</item>
+    </style>
 </resources>

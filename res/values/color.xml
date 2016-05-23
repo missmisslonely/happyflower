@@ -441,4 +441,8 @@
     <!-- 黑色 -->
 
 	<color name="startup">#12A2E5</color>
+	
+    <color name="black25PercentColor">#404040</color>
+    <color name="black38PercentColor">#606060</color>
+    <color name="black50PercentColor">#808080</color>
 </resources>

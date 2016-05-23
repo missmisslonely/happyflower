@@ -8,5 +8,6 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/ToggleButtonLib"/>
 	<classpathentry kind="src" path="gen"/>
+	<classpathentry exported="true" kind="lib" path="F:/AndroidStdio/Android/AndroidSDK/extras/android/m2repository/com/android/support/recyclerview-v7/22.2.0/recyclerview-v7-22.2.0-sources.jar"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>

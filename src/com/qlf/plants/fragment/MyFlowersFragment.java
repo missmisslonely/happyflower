@@ -25,6 +25,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.AdapterView.OnItemClickListener;
 
+import com.miss.plants.view.XListView;
+import com.miss.plants.view.XListView.IXListViewListener;
 import com.qlf.plants.MainActivity;
 import com.qlf.plants.R;
 import com.qlf.plants.bean.PlantBean;
@@ -38,8 +40,6 @@ import com.qlf.plants.sort.SortModel;
 import com.qlf.plants.thread.PlantInfoThread;
 import com.qlf.plants.utils.CommonAdapter;
 import com.qlf.plants.utils.ViewHolder;
-import com.qlf.plants.view.XListView;
-import com.qlf.plants.view.XListView.IXListViewListener;
 /**
  * 我的宝典
  * @author yxw19_000

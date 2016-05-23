@@ -1,9 +1,9 @@
 package com.qlf.plants.fragment;
 
+import com.miss.plants.view.DefinedScrollView;
 import com.qlf.plants.MainActivity;
 import com.qlf.plants.R;
 import com.qlf.plants.activity.Pop;
-import com.qlf.plants.view.DefinedScrollView;
 
 import android.app.Activity;
 import android.content.Intent;

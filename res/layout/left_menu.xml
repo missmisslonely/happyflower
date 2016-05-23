@@ -3,13 +3,44 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#0000" >
+  <com.miss.plants.view.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/user_img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/user_head"
+        app:border_color="#FFffffff"
+        app:border_width="1dp" />
 
+    <TextView
+        android:id="@+id/user_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="王小萌"
+        android:textColor="#fff"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/user_qianming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_id"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="爱知芽！爱植物！爱生活"
+        android:textColor="#fff"
+        android:textSize="14sp" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="200dp"
-        android:orientation="vertical" >
+        android:orientation="vertical" 
+        android:layout_below="@id/user_qianming">
 
         <RelativeLayout
             android:id="@+id/my_plants"
@@ -135,41 +166,39 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/line" />
+          <RelativeLayout
+            android:id="@+id/shequ"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants" >
+
+            <ImageView
+                android:id="@+id/id_img6"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/shequ" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/id_img6"
+                android:text="植物社区"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line" />
     </LinearLayout>
 
-    <com.qlf.plants.view.CircleImageView
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/user_img"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:src="@drawable/user_head"
-        app:border_color="#FFffffff"
-        app:border_width="1dp" />
-
-    <TextView
-        android:id="@+id/user_id"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/user_img"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="5dp"
-        android:text="王小萌"
-        android:textColor="#fff"
-        android:textSize="14sp" />
-
-    <TextView
-        android:id="@+id/user_qianming"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/user_id"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="5dp"
-        android:text="爱知芽！爱植物！爱生活"
-        android:textColor="#fff"
-        android:textSize="14sp" />
+  
 
     <ImageView
         android:id="@+id/setting_img"

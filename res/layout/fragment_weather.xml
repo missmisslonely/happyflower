@@ -1,13 +1,156 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:toggle="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="#fff" >
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/action_actionbar"
+        android:layout_width="fill_parent"
+        android:layout_height="49dp"
+        android:background="@drawable/action_background" >
+
+        <ImageView
+            android:id="@+id/action_back"
+            android:layout_width="25dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/button_back1" />
+
+        <TextView
+            android:id="@+id/actionbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/action_back"
+            android:text="花园天气"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+    </RelativeLayout>
 
    
-    <FrameLayout
-        android:id="@+id/content_frame"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
 
-</LinearLayout>
+        <LinearLayout
+            android:id="@+id/day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/action_actionbar"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/day1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="01/24"
+                android:textColor="@color/white"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/day2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="01/24 "
+                android:textColor="@color/white"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/day3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="01/24 "
+                android:textColor="@color/white"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/day4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="01/24 "
+                android:textColor="@color/white"
+                android:textSize="19sp" />
+        </LinearLayout>
+
+     
+
+        <LinearLayout
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/day"
+            android:orientation="vertical" >
+
+            <com.miss.plants.view.TrendView
+                android:id="@+id/trendView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+            </com.miss.plants.view.TrendView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/weather"
+            android:background="@drawable/shiline"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+
+        <LinearLayout
+            android:id="@+id/weather"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/weather1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="晴"
+                android:textColor="@color/white"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/weather2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="晴"
+                android:textColor="@color/white"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/weather3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="晴"
+                android:textColor="@color/white"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/weather4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="晴"
+                android:textColor="@color/white"
+                android:textSize="19sp" />
+        </LinearLayout>
+    
+
+</RelativeLayout>

@@ -3,6 +3,8 @@ package com.qlf.plants;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.miss.plants.view.CircleImageView;
+import com.miss.plants.view.SlidingMenu;
 import com.qlf.plants.fragment.MyFlowersFragment;
 import com.qlf.plants.fragment.MyPlantsFragment;
 import com.qlf.plants.fragment.MyPosFragment;
@@ -13,8 +15,6 @@ import com.qlf.plants.fragment.WeatherFragment;
 import com.qlf.plants.thread.PlantInfoThread;
 import com.qlf.plants.userdata.UserData;
 import com.qlf.plants.utils.ActionBarUtil;
-import com.qlf.plants.view.CircleImageView;
-import com.qlf.plants.view.SlidingMenu;
 import com.zcw.togglebutton.ToggleButton;
 
 import android.annotation.SuppressLint;
@@ -49,7 +49,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 	public FragmentTransaction transaction;
 	private MyPlantsFragment myPlantsFragment;
 
-	private RelativeLayout my_flower, my_pos, my_plants, my_yujing;
+	private RelativeLayout my_flower, my_pos, my_plants, my_yujing,my_tianqi,my_shequ;
 	private ImageView setting;
 	private ProgressDialog progressDialog;
 
@@ -93,6 +93,8 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 		my_plants = (RelativeLayout) findViewById(R.id.my_plants);
 	//	my_pos = (RelativeLayout) findViewById(R.id.my_pos);
 		my_yujing = (RelativeLayout) findViewById(R.id.yujing);
+		my_tianqi = (RelativeLayout) findViewById(R.id.tianqi);
+		my_shequ = (RelativeLayout) findViewById(R.id.shequ);
 		setting = (ImageView) findViewById(R.id.setting_img);
 		main_background = (LinearLayout) findViewById(R.id.main_background);
 
@@ -115,6 +117,8 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 		my_plants.setOnClickListener(this);
 		//my_pos.setOnClickListener(this);
 		my_yujing.setOnClickListener(this);
+		my_tianqi.setOnClickListener(this);
+		my_shequ.setOnClickListener(this);
 		setting.setOnClickListener(this);
 	}
 
@@ -193,7 +197,14 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 			mLeftMenu.toggle();
 			transaction = fm.beginTransaction();
 			WeatherFragment weatherFragment = new WeatherFragment();
-		//	transaction.replace(R.id.frame, weatherFragment);
+			transaction.replace(R.id.frame, weatherFragment);
+			transaction.commit();
+			break;
+		case R.id.shequ:
+			mLeftMenu.toggle();
+			transaction = fm.beginTransaction();
+			WeatherFragment weatherFragment1 = new WeatherFragment();
+			transaction.replace(R.id.frame, weatherFragment1);
 			transaction.commit();
 			break;
 		case R.id.setting_img:

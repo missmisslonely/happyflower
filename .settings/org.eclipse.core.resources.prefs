@@ -1,4 +1,7 @@
 eclipse.preferences.version=1
+encoding//src/com/miss/plants/view/DefinedScrollView.java=UTF-8
+encoding//src/com/miss/plants/view/SlidingMenu.java=GBK
+encoding//src/com/miss/plants/view/VerticalPager.java=GBK
 encoding//src/com/qlf/plants/activity/FlowersActivity.java=UTF-8
 encoding//src/com/qlf/plants/bean/PlantBean.java=GBK
 encoding//src/com/qlf/plants/fragment/MyFlowersFragment.java=UTF-8
@@ -7,7 +10,4 @@ encoding//src/com/qlf/plants/graph/StudentGradeMessage.java=UTF-8
 encoding//src/com/qlf/plants/scan/ScanCaptureAct.java=GBK
 encoding//src/com/qlf/plants/utils=UTF-8
 encoding//src/com/qlf/plants/utils/DBHelper.java=GBK
-encoding//src/com/qlf/plants/view/DefinedScrollView.java=UTF-8
-encoding//src/com/qlf/plants/view/SlidingMenu.java=GBK
-encoding//src/com/qlf/plants/view/VerticalPager.java=GBK
 encoding/<project>=UTF-8

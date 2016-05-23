@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+import com.miss.plants.view.XListView;
+import com.miss.plants.view.XListView.IXListViewListener;
 import com.qlf.plants.MainActivity;
 import com.qlf.plants.R;
 import com.qlf.plants.activity.PlantInfoActivity;
@@ -13,8 +15,6 @@ import com.qlf.plants.thread.GetTerminalThread;
 import com.qlf.plants.userdata.UserData;
 import com.qlf.plants.utils.CommonAdapter;
 import com.qlf.plants.utils.ViewHolder;
-import com.qlf.plants.view.XListView;
-import com.qlf.plants.view.XListView.IXListViewListener;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;

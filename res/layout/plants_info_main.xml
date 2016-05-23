@@ -41,7 +41,7 @@
             />
     </RelativeLayout>
 
-    <com.qlf.plants.view.VerticalPager
+    <com.miss.plants.view.VerticalPager
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_below="@id/action_actionbar" >
@@ -393,6 +393,6 @@
                     android:textColor="@drawable/radiobutton_main_tab_text_color" />
             </RadioGroup>
         </LinearLayout>
-    </com.qlf.plants.view.VerticalPager>
+    </com.miss.plants.view.VerticalPager>
 
 </RelativeLayout>

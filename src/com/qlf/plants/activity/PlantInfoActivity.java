@@ -42,6 +42,9 @@ import com.jjoe64.graphview.GraphView;
 import com.jjoe64.graphview.GraphView.GraphViewData;
 import com.jjoe64.graphview.GraphViewSeries;
 import com.jjoe64.graphview.LineGraphView;
+import com.miss.plants.view.DefinedScrollView;
+import com.miss.plants.view.SelectPicPopupWindow;
+import com.miss.plants.view.VerticalPager;
 import com.qlf.plants.R;
 import com.qlf.plants.bean.PosBean;
 import com.qlf.plants.fragment.MyPlantsFragment;
@@ -53,9 +56,6 @@ import com.qlf.plants.thread.GetTerminalHistoryInfo;
 import com.qlf.plants.thread.GetTerminalInfoThread;
 import com.qlf.plants.thread.GetTerminalThread;
 import com.qlf.plants.userdata.UserData;
-import com.qlf.plants.view.DefinedScrollView;
-import com.qlf.plants.view.SelectPicPopupWindow;
-import com.qlf.plants.view.VerticalPager;
 
 /**
  * 利用自定义的ScrollView加载视图来实现翻页效果，下面用页码和总页数标识当前的视图是第几屏
