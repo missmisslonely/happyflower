@@ -9,6 +9,8 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import com.qlf.plants.bean.IndexInfor;
+
 /**
  * @author Nemo
  * 
@@ -387,5 +389,48 @@ public class JSONUtil {
 		}
 		return map;
 	}
+	// 首页得到数据
+	// 分类
+	public static List<IndexInfor> parseJsonToIndexInfo(String jsonString) {
+		List<IndexInfor> list = new ArrayList<IndexInfor>();
+		List<Map<String, String>> list1;
+		if (jsonString != null) {
+			try {
+				JSONArray jsonArray = new JSONArray(jsonString);
+				for (int i = 0; i < jsonArray.length(); i++) {
+					IndexInfor sortSearchDemo = new IndexInfor();
+					JSONObject jsonObject = jsonArray.getJSONObject(i);
+					sortSearchDemo.setIsSale(jsonObject.getInt("isSale"));
+					sortSearchDemo.setGoodsId(jsonObject.getInt("goodsId"));
+					sortSearchDemo.setGoodsConnect(jsonObject
+							.getString("goodsConnect"));
+					sortSearchDemo.setUserId(jsonObject.getString("userId"));
+					sortSearchDemo.setGoodsDescribe(jsonObject
+							.getString("goodsDescribe"));
+					sortSearchDemo.setGoodsTypeId(jsonObject
+							.getInt("goodsTypeId"));
+					sortSearchDemo.setGoodsPrice(jsonObject
+							.getString("goodsPrice"));
+					sortSearchDemo.setGoodsWanted(jsonObject
+							.getInt("goodsWanted"));
+					sortSearchDemo.setGoodsPublishTime(jsonObject
+							.getString("goodsPublishTime"));
+					sortSearchDemo.setGoodsName(jsonObject
+							.getString("goodsName"));
+					JSONArray array = jsonObject.getJSONArray("goodsPictureAD");
+					String[] picList = { "", "", "" };
+					for (int j = 0; j < array.length(); j++) {
+						picList[j] = array.getString(j);
+					}
+					sortSearchDemo.setList(picList);
+					list.add(sortSearchDemo);
+				}
 
+				return list;
+			} catch (JSONException e) {
+				e.printStackTrace();
+			}
+		}
+		return list;
+	}
 }

@@ -5,15 +5,16 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="14"
+        android:minSdkVersion="8"
         android:targetSdkVersion="19" />
+
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
 
     <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -29,20 +30,32 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.qlf.plants.activity.AddPosActivity"/>
-        <activity android:name="com.qlf.plants.activity.LoginActivity"/>
-        <activity android:name="com.qlf.plants.activity.RegisterActivity"/>
-         <activity android:name="com.qlf.plants.activity.AskPosActivity"/>
-         <activity android:name="com.qlf.plants.activity.PlantInfoActivity"/>
-         <activity android:name="com.qlf.plants.activity.AddPlantActivity"/>
-         <activity android:name="com.qlf.plants.activity.PlantMoreInfoActivity"/>
-         <activity android:name="com.qlf.plants.activity.Pop" android:theme="@style/MyDialogStyleBottom"/>
-          <activity android:name="com.qlf.plants.activity.PopBackground" android:theme="@style/PopBackgroundStyle"/>
-        <activity android:name=".MainActivity"/>
-        <activity android:name="com.qlf.plants.activity.SelectPicPopupWindow" android:theme="@style/PopBackgroundStyle"/>
+        <activity android:name="com.qlf.plants.activity.AddPosActivity" />
+        <activity android:name="com.qlf.plants.activity.LoginActivity" />
+        <activity android:name="com.qlf.plants.activity.RegisterActivity" />
+        <activity android:name="com.qlf.plants.activity.AskPosActivity" />
+        <activity android:name="com.qlf.plants.activity.PlantInfoActivity" />
+        <activity android:name="com.qlf.plants.activity.AddPlantActivity" />
+        <activity android:name="com.qlf.plants.activity.PlantMoreInfoActivity" />
+        <activity
+            android:name="com.qlf.plants.activity.Pop"
+            android:theme="@style/MyDialogStyleBottom" />
+        <activity
+            android:name="com.qlf.plants.activity.PopBackground"
+            android:theme="@style/PopBackgroundStyle" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name="com.qlf.plants.activity.SelectPicPopupWindow"
+            android:theme="@style/PopBackgroundStyle" />
         <activity
             android:name="com.qlf.plants.scan.ScanCaptureAct"
-            android:screenOrientation="portrait"  />
-    </application>
+            android:screenOrientation="portrait" />
+       <activity android:name="com.miss.plants.publish.PhotoActivity" />
+       
+       <activity android:name="com.miss.plants.publish.PublishActivity" />
+       
+       <activity android:name="com.miss.plants.publish.PublishsuccActivity" />
+    
+        </application>
 
 </manifest>

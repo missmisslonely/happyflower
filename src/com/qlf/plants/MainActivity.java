@@ -5,6 +5,7 @@ import java.util.List;
 
 import com.miss.plants.view.CircleImageView;
 import com.miss.plants.view.SlidingMenu;
+import com.qlf.plants.fragment.CommunityFragment;
 import com.qlf.plants.fragment.MyFlowersFragment;
 import com.qlf.plants.fragment.MyPlantsFragment;
 import com.qlf.plants.fragment.MyPosFragment;
@@ -203,8 +204,8 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 		case R.id.shequ:
 			mLeftMenu.toggle();
 			transaction = fm.beginTransaction();
-			WeatherFragment weatherFragment1 = new WeatherFragment();
-			transaction.replace(R.id.frame, weatherFragment1);
+			CommunityFragment communityFragment = new CommunityFragment();
+			transaction.replace(R.id.frame, communityFragment);
 			transaction.commit();
 			break;
 		case R.id.setting_img:

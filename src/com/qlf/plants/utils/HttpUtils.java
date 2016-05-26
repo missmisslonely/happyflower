@@ -130,4 +130,15 @@ public class HttpUtils {
 		}
 		return null;
 	}
+	public static String decode(String str) throws IOException {
+		String string;
+		byte[] b = null;
+		Decoder.BASE64Decoder a = new Decoder.BASE64Decoder();
+
+		b = a.decodeBuffer(str);
+
+		string = new String(b, "GB2312");
+		return string;
+	}
+
 }
